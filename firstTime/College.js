@@ -8,7 +8,9 @@ const College = () => {
     const [college, setCollege] = useState("")
     const handleSubmit = () => {
         setHasSubmited(true)
-        console.log("submitPressed")
+        // make a user object
+        // guide it to the flash screen
+        
     }
     const flipRef = useRef()
     return (

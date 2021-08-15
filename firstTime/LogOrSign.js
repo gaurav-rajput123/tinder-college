@@ -17,15 +17,10 @@ const LogOrSign = ({navigation}) => {
                 <View style={{flex: 1}}/>
                 <View style={styles.buttonBox}>
                     <View style={styles.buttonViews}>
-                        <LinearGradient start={{x: 0, y: 0.5}} end={{x: 1, y: 0.5}} colors={["#00F260", "#0575E6"]} style={{borderRadius: 24}}>
                             <Button onPress={()=>console.log("mothing")} style={[styles.buttonSignUp, styles.buttonStyles]} mode='contained'><Text style={[{color: "black", fontSize: 20, }, styles.text]}>Sign Up</Text></Button>    
-                        </LinearGradient>
                     </View>
                     <View style={styles.buttonViews}>
-                        {/* <LinearGradient start={{x: 0, y: 0.5}} end={{x: 1, y: 0.5}} colors={["#00F260", "#0575E6"]} style={{borderRadius: 24}}> */}
-                            <Button onPress={()=>navigation.navigate("verification")} style={[styles.buttonLogIn, styles.buttonStyles]} mode='contained'><Text style={[{color: "black", fontSize:20, backgroundColor: "transparent" }, styles.text]}>Log In</Text></Button>
-                        {/* </LinearGradient> */}
-                        {/* <Button onPress={()=>console.log("helloi")}><Text>Hello</Text></Button> */}
+                        <Button onPress={()=>navigation.navigate("verification")} style={[styles.buttonLogIn, styles.buttonStyles]} mode='contained'><Text style={[{color: "black", fontSize:20, backgroundColor: "transparent" }, styles.text]}>Log In</Text></Button>
                     </View>
                 </View> 
             </ImageBackground>
